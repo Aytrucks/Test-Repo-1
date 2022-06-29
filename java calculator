@@ -1,0 +1,39 @@
+//This calculator can add, subtract, divide, and multiply two numbers
+
+import java.util.Scanner;
+
+public class calc{
+  public static void main (String[] args){
+    Scanner in = new Scanner(System.in);
+    
+    System.out.println("Input number one");
+    int a = in.nextInt();
+    
+    System.out.println("Input number two");
+    int b = in.nextInt();
+    
+    System.out.println("Click 1 to add, 2 to subtract, 3 to multiply, and 4 to divide);
+    int c = in.nextInt();
+    int d;
+    if(c = 1){
+      d = a + b;
+      System.out.println(d);
+    }
+    else if(c = 2){
+      d = a - b;
+      System.out.println(d);
+    }
+    else if(c = 3){
+      d = a * b;
+      System.out.println(d);
+    }
+    else if(c = 4){
+      d = a / b;
+      System.out.println(d);
+    }
+    else{
+      System.out.println("Unable to identify input);
+    }
+    
+  }
+}
